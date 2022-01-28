@@ -4,109 +4,111 @@
     <HomeSwiper :banners="banners"/>
     <recommend-view :recommends="recommends"></recommend-view>
     <feature-view/>
-    <tab-control class="tab-control" :titles="['流行', '新款', '精选']"/>
-    <goods-list :goods="goods['pop'].list"/>
+    <tab-control class="tab-control"
+                 :titles="['流行', '新款', '精选']"
+                 @tabClick="tabClick"/>
+    <goods-list :goods="showGoods"/>
     <ul>
-      <li>列表1</li>
-      <li>列表2</li>
-      <li>列表3</li>
-      <li>列表4</li>
-      <li>列表5</li>
-      <li>列表6</li>
-      <li>列表7</li>
-      <li>列表8</li>
-      <li>列表9</li>
-      <li>列表10</li>
-      <li>列表11</li>
-      <li>列表12</li>
-      <li>列表13</li>
-      <li>列表14</li>
-      <li>列表15</li>
-      <li>列表16</li>
-      <li>列表17</li>
-      <li>列表18</li>
-      <li>列表19</li>
-      <li>列表20</li>
-      <li>列表21</li>
-      <li>列表22</li>
-      <li>列表23</li>
-      <li>列表24</li>
-      <li>列表25</li>
-      <li>列表26</li>
-      <li>列表27</li>
-      <li>列表28</li>
-      <li>列表29</li>
-      <li>列表30</li>
-      <li>列表31</li>
-      <li>列表32</li>
-      <li>列表33</li>
-      <li>列表34</li>
-      <li>列表35</li>
-      <li>列表36</li>
-      <li>列表37</li>
-      <li>列表38</li>
-      <li>列表39</li>
-      <li>列表40</li>
-      <li>列表41</li>
-      <li>列表42</li>
-      <li>列表43</li>
-      <li>列表44</li>
-      <li>列表45</li>
-      <li>列表46</li>
-      <li>列表47</li>
-      <li>列表48</li>
-      <li>列表49</li>
-      <li>列表50</li>
-      <li>列表51</li>
-      <li>列表52</li>
-      <li>列表53</li>
-      <li>列表54</li>
-      <li>列表55</li>
-      <li>列表56</li>
-      <li>列表57</li>
-      <li>列表58</li>
-      <li>列表59</li>
-      <li>列表60</li>
-      <li>列表61</li>
-      <li>列表62</li>
-      <li>列表63</li>
-      <li>列表64</li>
-      <li>列表65</li>
-      <li>列表66</li>
-      <li>列表67</li>
-      <li>列表68</li>
-      <li>列表69</li>
-      <li>列表70</li>
-      <li>列表71</li>
-      <li>列表72</li>
-      <li>列表73</li>
-      <li>列表74</li>
-      <li>列表75</li>
-      <li>列表76</li>
-      <li>列表77</li>
-      <li>列表78</li>
-      <li>列表79</li>
-      <li>列表80</li>
-      <li>列表81</li>
-      <li>列表82</li>
-      <li>列表83</li>
-      <li>列表84</li>
-      <li>列表85</li>
-      <li>列表86</li>
-      <li>列表87</li>
-      <li>列表88</li>
-      <li>列表89</li>
-      <li>列表90</li>
-      <li>列表91</li>
-      <li>列表92</li>
-      <li>列表93</li>
-      <li>列表94</li>
-      <li>列表95</li>
-      <li>列表96</li>
-      <li>列表97</li>
-      <li>列表98</li>
-      <li>列表99</li>
-      <li>列表100</li>
+      <li>商品展示1</li>
+      <li>商品展示2</li>
+      <li>商品展示3</li>
+      <li>商品展示4</li>
+      <li>商品展示5</li>
+      <li>商品展示6</li>
+      <li>商品展示7</li>
+      <li>商品展示8</li>
+      <li>商品展示9</li>
+      <li>商品展示10</li>
+      <li>商品展示11</li>
+      <li>商品展示12</li>
+      <li>商品展示13</li>
+      <li>商品展示14</li>
+      <li>商品展示15</li>
+      <li>商品展示16</li>
+      <li>商品展示17</li>
+      <li>商品展示18</li>
+      <li>商品展示19</li>
+      <li>商品展示20</li>
+      <li>商品展示21</li>
+      <li>商品展示22</li>
+      <li>商品展示23</li>
+      <li>商品展示24</li>
+      <li>商品展示25</li>
+      <li>商品展示26</li>
+      <li>商品展示27</li>
+      <li>商品展示28</li>
+      <li>商品展示29</li>
+      <li>商品展示30</li>
+      <li>商品展示31</li>
+      <li>商品展示32</li>
+      <li>商品展示33</li>
+      <li>商品展示34</li>
+      <li>商品展示35</li>
+      <li>商品展示36</li>
+      <li>商品展示37</li>
+      <li>商品展示38</li>
+      <li>商品展示39</li>
+      <li>商品展示40</li>
+      <li>商品展示41</li>
+      <li>商品展示42</li>
+      <li>商品展示43</li>
+      <li>商品展示44</li>
+      <li>商品展示45</li>
+      <li>商品展示46</li>
+      <li>商品展示47</li>
+      <li>商品展示48</li>
+      <li>商品展示49</li>
+      <li>商品展示50</li>
+      <li>商品展示51</li>
+      <li>商品展示52</li>
+      <li>商品展示53</li>
+      <li>商品展示54</li>
+      <li>商品展示55</li>
+      <li>商品展示56</li>
+      <li>商品展示57</li>
+      <li>商品展示58</li>
+      <li>商品展示59</li>
+      <li>商品展示60</li>
+      <li>商品展示61</li>
+      <li>商品展示62</li>
+      <li>商品展示63</li>
+      <li>商品展示64</li>
+      <li>商品展示65</li>
+      <li>商品展示66</li>
+      <li>商品展示67</li>
+      <li>商品展示68</li>
+      <li>商品展示69</li>
+      <li>商品展示70</li>
+      <li>商品展示71</li>
+      <li>商品展示72</li>
+      <li>商品展示73</li>
+      <li>商品展示74</li>
+      <li>商品展示75</li>
+      <li>商品展示76</li>
+      <li>商品展示77</li>
+      <li>商品展示78</li>
+      <li>商品展示79</li>
+      <li>商品展示80</li>
+      <li>商品展示81</li>
+      <li>商品展示82</li>
+      <li>商品展示83</li>
+      <li>商品展示84</li>
+      <li>商品展示85</li>
+      <li>商品展示86</li>
+      <li>商品展示87</li>
+      <li>商品展示88</li>
+      <li>商品展示89</li>
+      <li>商品展示90</li>
+      <li>商品展示91</li>
+      <li>商品展示92</li>
+      <li>商品展示93</li>
+      <li>商品展示94</li>
+      <li>商品展示95</li>
+      <li>商品展示96</li>
+      <li>商品展示97</li>
+      <li>商品展示98</li>
+      <li>商品展示99</li>
+      <li>商品展示100</li>
     </ul>
   </div>
 </template>
@@ -142,7 +144,13 @@
           'pop': {page: 0, list: []},
           'new': {page: 0, list: []},
           'sell': {page: 0, list: []}
-        }
+        },
+        currentType: 'pop'
+      }
+    },
+    computed: {
+      showGoods() {
+        return this.goods[this.currentType].list
       }
     },
     created() {
@@ -155,6 +163,26 @@
       this.getHomeGoods('sell')
     },
     methods: {
+      /**
+       * 事件监听相关的方法
+       */
+      tabClick(index) {
+        switch (index) {
+          case 0:
+            this.currentType = 'pop'
+            break
+          case 1:
+            this.currentType = 'new'
+            break
+          case 2:
+            this.currentType = 'sell'
+            break
+      }
+      },
+
+      /**
+       * 网络请求相关的方法
+       */
       getHomeMultidata(){
         getHomeMultidata().then(res => {
           // this.result = res
@@ -193,5 +221,6 @@
   .tab-control {
     position: sticky;
     top: 44px;
+    z-index: 9;
   }
 </style>

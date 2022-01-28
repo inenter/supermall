@@ -25,5 +25,13 @@
 </script>
 
 <style scoped>
+  .goods {
+    display: flex;
+    /*包裹*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding: 2px;
+  }
 
 </style>
